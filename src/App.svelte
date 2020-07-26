@@ -1,7 +1,20 @@
 <script>
   import TalkCard from "./card/TalkCard.svelte";
 
-  export let _boards;
+  import { dndzone } from "svelte-dnd-action";
+  import { flip } from "svelte/animate";
+  const flipDurationMs = 300;
+
+  export let tracks;
+
+  function handleDndConsiderCards(e) {
+    tracks = e.detail.items;
+    tracks = [...tracks];
+  }
+  function handleDndFinalizeCards(e) {
+    tracks = e.detail.items;
+    tracks = [...tracks];
+  }
 </script>
 
 <style>
@@ -48,9 +61,13 @@
     rel="stylesheet"
     href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 </svelte:head>
-<div class="board">
-  {#each _boards[0].tracks as track}
-    <div class="card-list">
+<div
+  class="board"
+  use:dndzone={{ items: tracks, flipDurationMs }}
+  on:consider={(e) => handleDndConsiderCards(e)}
+  on:finalize={(e) => handleDndFinalizeCards(e)}>
+  {#each tracks as track (track.id)}
+    <div class="card-list" animate:flip={{ duration: flipDurationMs }}>
       <div class="track-title">
         <h2 style="margin-top: 0.5em">{track.title}</h2>
       </div>

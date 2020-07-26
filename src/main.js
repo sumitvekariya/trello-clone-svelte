@@ -5,7 +5,7 @@ const app = new App({
 	target: document.body,
 	props: {
 		name: 'world',
-		_boards
+		tracks: _boards[0].tracks
 	}
 });
 
