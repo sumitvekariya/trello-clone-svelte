@@ -61,7 +61,7 @@
             <Content class="mdc-typography--body1">By: {talk.speaker}</Content>
           {/if}
         </PrimaryAction>
-        <Actions>
+        <!-- <Actions>
           <ActionButtons>
             <Button>
               <Label>Action</Label>
@@ -70,7 +70,7 @@
               <Label>Another</Label>
             </Button>
           </ActionButtons>
-          <!-- <ActionIcons>
+          <ActionIcons>
             <IconButton
               toggle
               aria-label="Add to favorites"
@@ -82,8 +82,8 @@
             <IconButton class="material-icons" title="More options">
               more_vert
             </IconButton>
-          </ActionIcons> -->
-        </Actions>
+          </ActionIcons>
+        </Actions> -->
       </Card>
     </div>
   {/each}
