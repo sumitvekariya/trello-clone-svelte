@@ -1,5 +1,4 @@
-[![Watch the demo](https://www.loom.com/embed/d0af5a1c412844a58257f04f73a33606)](https://www.loom.com/embed/d0af5a1c412844a58257f04f73a33606)
-
+[![Svelte Drag & Drop Demo](https://cdn.loom.com/sessions/thumbnails/d0af5a1c412844a58257f04f73a33606-with-play.gif)](https://www.loom.com/embed/d0af5a1c412844a58257f04f73a33606)
 
 # svelte app
 
