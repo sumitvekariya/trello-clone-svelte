@@ -1,4 +1,5 @@
----
+[![Watch the demo](https://www.loom.com/embed/d0af5a1c412844a58257f04f73a33606)](https://www.loom.com/embed/d0af5a1c412844a58257f04f73a33606)
+
 
 # svelte app
 
